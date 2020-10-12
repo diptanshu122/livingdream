@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LIVING-THE-DREAM</title>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+    <meta name="format-decetion" content="telephone=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- meta description & keywords -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!-- fevicon icon -->
+    <link rel='icon' type='image/x-icon' href="images/favicon-16x.png"/>
+    <!-- jquery library -->
+    <script src="vendor/javascripts/jquery.min.js"></script>
+    <!-- css links -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="dist/main.css"/>
+    <link rel="stylesheet" type="text/css" href="dist/themify-icons.css"/>
+    <link rel="stylesheet" type="text/css" href="dist/owl.carousel.min.css"/>
+
+    <!--daterangepicker-->
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment-with-locales.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if IE 8]>
+    <script src="vendor/javascripts/html5shiv.min.js"></script>
+    <script src="vendor/javascripts/respond.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/ie8.css"/>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <html class="ie7"> <![endif]-->
+    <!--[if IE 8]>
+    <html class="ie8"> <![endif]-->
+    <!--[if IE 9]>
+    <html class="ie9"> <![endif]-->
+    <!--[if !IE]><!-->
+    <script>
+        if (/*@cc_on!@*/false) {
+            document.documentElement.className += 'ie10';
+        }
+    </script><!--<![endif]-->
+</head>
+<body>
+
+
+<!--====== header ======-->
+<header class="header">
+    <!--navbar-->
+    <nav class="navbar">
+        <!--nav-link-->
+        <ul class="nav-link">
+            <li><a href="#FAVORITES">FAVORITES</a></li>
+            <li><a href="#OURSELECTION ">OUR SELECTION </a></li>
+        </ul>
+        <!--navbar-brand-->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/brand-logo.png" alt="brand-logo">
+        </a>
+        <!--nav-link-->
+        <ul class="nav-link">
+            <li><a href="#MAGAZINE">MAGAZINE</a></li>
+            <li><a href="#CONTACT">CONTACT</a></li>
+        </ul>
+
+        <!--menu-icon-->
+        <a href="#" class="menu-icon">
+            <div class="icon">
+                <span class="icon-bar first"></span>
+                <span class="icon-bar middle"></span>
+                <span class="icon-bar third"></span>
+            </div>
+        </a>
+
+        <!--call-to-->
+        <div class="clearfix clearto"></div>
+        <div class="call-to">
+            <a href="tel:8187068745" class="tell">CALL TO BOOK +1 818 706 8745</a><br>
+            <a href="#" class="login btn"><span><img src="images/login-icon.png" alt="no-image"> LOGIN</span></a>
+        </div>
+    </nav>
+</header>
+<!--=== close header ===-->
+
+<!--============ sidenavMenu ============-->
+<div id="sidenavMenu" class="sidenav">
+    <!--verticle-block-->
+    <div class="verticle-block">
+        <div class="cell">
+            <div class="container-fluid text-center">
+                <a href="index.html">
+                    <img src="images/brand-logo.png" class="img-responsive" alt="brand-logo">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--slidenav link-->
+    <div class="link-list"></div>
+</div>
+<!--========= close sidenavMenu =========-->
+
+<!--========== how-to-book ==========-->
+<div class="how-to-book">
+    <!--======= verticle-block =======-->
+    <div class="verticle-block">
+        <div class="cell">
+            <div class="container">
+                <h2 class="wow fadeInUp" data-wow-delay="200ms">Leaving the dream closer than you think</h2>
+                <h3 class="wow fadeInUp" data-wow-delay="400ms">Lorem ipsum dolor sit amet consectetuer</h3>
+                <!--where-want-selector-->
+                <div class="where-want-selector">
+                    <div class="where-want">
+                        <!--input-where-->
+                        <div class="input-where">
+                            <div class="where-you-want">
+                                    <span class="skewx-reverse">
+                                        <span class="ti-location-pin"></span>
+                                        <input type="text" id="country-select" class="form-control"
+                                               placeholder="Where ?">
+                                    </span>
+                            </div>
+                            <ul class="autocomplete-menu">
+                                <li><a href="#">California - Los Angeles </a></li>
+                                <li><a href="#">California - Los Angeles 1</a></li>
+                                <li><a href="#">California - Los Angeles 2</a></li>
+                                <li><a href="#">California - Los Angeles 3</a></li>
+                            </ul>
+                        </div>
+
+                        <!--check-status-->
+                        <div class="check-status">
+                            <div class="where-you-want">
+                                    <span class="skewx-reverse">
+                                        <input type="text" id="daterange" value="" class="form-control"
+                                               placeholder="Check-in">
+                                    </span>
+                            </div>
+
+                            <!--Check-in button-->
+                            <!--<button class="btn">
+                                <span class="skewx-reverse">
+                                    <span class="check-in">Check-in</span>
+                                    <img src="images/checkin-arrow.png" class="check-image" alt="no-img">
+                                    <span class="check-out">Check-out</span>
+                                </span>
+                            </button>-->
+                            <!--close Check-in button-->
+                        </div>
+
+                        <!--guest-number-->
+                        <div class="guest-number">
+                            <div class="guest-block">
+                                    <span class="skewx-reverse">
+                                        <span class="number-guest">1</span> Guest
+                                        <span class="counter-guest">
+                                            <!--==decrease-guest==-->
+                                            <span class="decrease-guest guest-icon qtyminus hideicon">
+                                                <span class="ti-minus icon"></span>
+                                            </span>
+                                            <!--==increase-guest==-->
+                                            <span class="increase-guest guest-icon qtyplus">
+                                                <span class="ti-plus icon"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                            </div>
+                        </div>
+
+                        <!--search-status-->
+                        <div class="search-status">
+                            <button class="btn search">
+                                <span class="skewx-reverse">SEARCH</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--clsoe where-want-selector -->
+            </div>
+        </div>
+    </div>
+    <!--==== close verticle-block ====-->
+</div>
+<!--======= close how-to-book =======-->
+
+<!--========== aboutus-leaving-dream ==========-->
+<div class="aboutus-leaving-dream">
+    <!--top-skew-->
+    <div class="top-skew"></div>
+    <!--top-skew-content-->
+    <div class="top-skew-content">
+
+        <!--view-our-location-->
+        <div class="view-our-location">
+            <div class="container">
+                <div class="top-skew-content">
+                    <!--description-->
+                    <div class="description">
+                        <h1>LEAVING THE DREAM CLOSER THAN YOU THINK</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra nibh non lorem congue,
+                            in
+                            sagittis quam aliquam. Fusce condimentum fringilla malesuada. Pellentesque habitant morbi
+                            tristique
+                            senectus et netus et malesuada fames ac turpis egestas.<br>
+                            Duis purus sapien, laoreet non gravida id, condimentum at turpis. Sed vitae iaculis leo.
+                            Integer
+                            faucibus mi at volutpat lacinia. Vivamus vel est justo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--container-fluid-->
+            <div class="container-fluid">
+                <div class="top-skew-content">
+                    <!--leaving room image-->
+                    <div class="location-view wow fadeInLeft" data-wow-delay="400ms">
+                        <div class="leaving-image">
+                            <img src="images/balcony.png" alt="no-img" class="full-img">
+                        </div>
+                    </div>
+                    <!--leaving room image-->
+                    <div class="location-view">
+                        <div class="leaving-image wow fadeInLeft" data-wow-delay="600ms">
+                            <img src="images/leaving-rrom.png" alt="no-img" class="full-img">
+                        </div>
+                    </div>
+                    <!--leaving room image-->
+                    <div class="location-view wow fadeInLeft" data-wow-delay="800ms">
+                        <div class="leaving-image">
+                            <img src="images/floor-marble.png" alt="no-img" class="full-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--======= close aboutus-leaving-dream =======-->
+
+<!--============= our-leaving-service =============-->
+<div class="our-leaving-service">
+    <div class="container-fluid">
+        <!--booking-service-->
+        <div class="booking-service wow fadeInRight" data-wow-delay="400ms">
+            <img src="images/thumb-sup.png" alt="no-image">
+            <h2>BEST RATE <strong>GUARANTEE</strong></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra nibh non lorem congue, in
+                sagittis quam aliquam. Fusce condimentum fringilla malesuada. Pellentesque habitant morbi tristique
+                senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+        <!--booking-service-->
+        <div class="booking-service wow fadeInRight" data-wow-delay="600ms">
+            <img src="images/click-date.png" alt="no-image">
+            <h2>EASY <strong>BOOKING</strong></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra nibh non lorem congue, in
+                sagittis quam aliquam. Fusce condimentum fringilla malesuada. Pellentesque habitant morbi tristique
+                senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+        <!--booking-service-->
+        <div class="booking-service wow fadeInRight" data-wow-delay="800ms">
+            <img src="images/diamond.png" alt="no-image">
+            <h2>EXCLUSIVE <strong>VILLAS</strong></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra nibh non lorem congue, in
+                sagittis quam aliquam. Fusce condimentum fringilla malesuada. Pellentesque habitant morbi tristique
+                senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+    </div>
+</div>
+<!--========== close our-leaving-service ==========-->
+
+<!--============= feel-like-home =============-->
+<div class="feel-like-home">
+    <!--controller-->
+    <div class="home-container controller-slider">
+        <div class="top-skew-content">
+            <div class="controller">
+                <a href="javascript:;" class="prev"><img src="images/feel-prev.png" alt="prev"></a><br>
+                <a href="javascript:;" class="next"><img src="images/feel-next.png" alt="next"></a>
+            </div>
+        </div>
+    </div>
+    <!--home-container-->
+    <div class="home-container slideContainer clearfix">
+        <!--top-skew-->
+        <div class="top-skew"></div>
+        <!--top-skew-content-->
+        <div class="top-skew-content">
+            <!--home-image-->
+            <div class="home-image wow bounceInLeft" data-wow-delay="200ms">
+                <div class="owl-carousel" id="feelhome-image">
+                    <!--item slider-->
+                    <div class="item">
+                        <img src="images/feel-home.png" alt="no-image" class="full-img">
+                    </div>
+                    <!--item slider-->
+                    <div class="item">
+                        <img src="images/property-3.png" alt="no-image" class="full-img">
+                    </div>
+                    <!--item slider-->
+                    <div class="item">
+                        <img src="images/property-2.png" alt="no-image" class="full-img">
+                    </div>
+                </div>
+            </div>
+
+            <!--home-content-->
+            <div class="home-content wow bounceInUp" data-wow-delay="400ms">
+                <div class="owl-carousel" id="feelhome-content">
+                    <!--item slider-->
+                    <div class="item">
+                        <div class="feelhome-description">
+                            <h2>Feel just like at home</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra nibh non lorem
+                                congue, in
+                                sagittis quam aliquam. Fusce condimentum fringilla malesuada. Pellentesque habitant
+                                morbi
+                                tristique senectus et netus et malesuada fames ac turpis egestas.
+                            </p>
+                            <p>
+                                Duis ultricies ipsum nec libero tempus porta. Phasellus justo quam, hendrerit vitae
+                                gravida vel,
+                                malesuada nec tortor. Curabitur nec tincidunt velit. Aliquam sed ultrices lectus. Aenean
+                                ut sem
+                                quis nunc ultricies faucibus. Nullam ac metus ut dui lacinia varius eu non lacus. Ut
+                                interdum
+                                nisi erat, et vehicula metus dapibus eu. Donec vel justo eget dui porta finibus eu et
+                                ex.
+                            </p>
+                        </div>
+                    </div>
+                    <!--item slider-->
+                    <div class="item">
+                        <div class="feelhome-description">
+                            <h2>Feel just like at home</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra nibh non lorem
+                                congue, in
+                                sagittis quam aliquam. Fusce condimentum fringilla malesuada. Pellentesque habitant
+                                morbi
+                                tristique senectus et netus et malesuada fames ac turpis egestas.
+                            </p>
+                            <p>
+                                Duis ultricies ipsum nec libero tempus porta. Phasellus justo quam, hendrerit vitae
+                                gravida vel,
+                                malesuada nec tortor. Curabitur nec tincidunt velit. Aliquam sed ultrices lectus. Aenean
+                                ut sem
+                                quis nunc ultricies faucibus. Nullam ac metus ut dui lacinia varius eu non lacus. Ut
+                                interdum
+                                nisi erat, et vehicula metus dapibus eu. Donec vel justo eget dui porta finibus eu et
+                                ex.
+                            </p>
+                        </div>
+                    </div>
+                    <!--item slider-->
+                    <div class="item">
+                        <div class="feelhome-description">
+                            <h2>Feel just like at home</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra nibh non lorem
+                                congue, in
+                                sagittis quam aliquam. Fusce condimentum fringilla malesuada. Pellentesque habitant
+                                morbi
+                                tristique senectus et netus et malesuada fames ac turpis egestas.
+                            </p>
+                            <p>
+                                Duis ultricies ipsum nec libero tempus porta. Phasellus justo quam, hendrerit vitae
+                                gravida vel,
+                                malesuada nec tortor. Curabitur nec tincidunt velit. Aliquam sed ultrices lectus. Aenean
+                                ut sem
+                                quis nunc ultricies faucibus. Nullam ac metus ut dui lacinia varius eu non lacus. Ut
+                                interdum
+                                nisi erat, et vehicula metus dapibus eu. Donec vel justo eget dui porta finibus eu et
+                                ex.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--close slider-->
+            </div>
+            <!--close home-content-->
+
+        </div>
+    </div>
+    <!--top-skew-->
+    <div class="bottom-skew"></div>
+</div>
+<!--========== close feel-like-home ==========-->
+
+
+<!--========== featured properties ==========-->
+<div class="featured-properties">
+    <!--top-skew-content-->
+    <div class="top-skew-content">
+        <div class="container">
+            <!--featured-title-->
+            <div class="featured-title">
+                <h2><span>FEATURED PROPERTIES</span></h2>
+                <p class="wow fadeInDown" data-wow-delay="400ms">Just browse our featured selection of properties to
+                    feel on holiday</p>
+            </div>
+        </div>
+        <!--properties-boxes-->
+        <div class="properties-boxes">
+            <div class="row">
+                <!--controller-->
+                <div class="col-xs-12">
+                    <div class="controller">
+                        <a href="javascript:;" class="prev"><i class="fa fa-angle-left"></i></a>
+                        <a href="javascript:;" class="next"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="owl-carousel wow fadeInUp" data-wow-delay="200ms" id="slider-properties">
+                    <div class="item">
+                        <!--properties-card-->
+                        <div class="col-xs-12">
+                            <div class="properties-card">
+                                <img src="images/property-1.png" alt="properties-img" class="full-img">
+                                <!--properties-detail-->
+                                <div class="properties-detail">
+                                    <h2>Malibu the beautiful</h2>
+                                    <div class="rate-our-deal">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <h4>(1)</h4>
+                                    </div>
+                                    <p>Duis ultricies ipsum nec libero tempus portm nec libero tempu
+                                        hasellu ro tempus portm nec libero tem</p>
+                                    <!--footer-price-->
+                                    <div class="footer-price">
+                                        <!--notification-->
+                                        <div class="notification">
+                                            <ul>
+                                                <li><img src="images/bed-icon.png" alt="notification-icon"><sup>4</sup>
+                                                </li>
+                                                <li><img src="images/people-icon.png"
+                                                         alt="notification-icon"><sup>8</sup></li>
+                                                <li><img src="images/person-icon.png" alt="notification-icon"></li>
+                                                <li><img src="images/swim-icon.png" alt="notification-icon"></li>
+                                            </ul>
+                                        </div>
+                                        <!--from-price-->
+                                        <div class="from-price">
+                                            <h2><span><sup>FROM $</sup>1,587</span></h2>
+                                        </div>
+                                    </div>
+                                    <!--close footer-price-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--close properties-card-->
+                    </div>
+
+                    <div class="item">
+                        <!--properties-card-->
+                        <div class="col-xs-12">
+                            <div class="properties-card">
+                                <img src="images/property-3.png" alt="properties-img" class="full-img">
+                                <!--properties-detail-->
+                                <div class="properties-detail">
+                                    <h2>Beverly Hills at the top</h2>
+                                    <div class="rate-our-deal">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <h4>(1)</h4>
+                                    </div>
+                                    <p>Duis ultricies ipsum nec libero tempus portm nec libero tempu
+                                        hasellu ro tempus portm nec libero tem</p>
+                                    <!--footer-price-->
+                                    <div class="footer-price">
+                                        <!--notification-->
+                                        <div class="notification">
+                                            <ul>
+                                                <li><img src="images/bed-icon.png" alt="notification-icon"><sup>4</sup>
+                                                </li>
+                                                <li><img src="images/people-icon.png"
+                                                         alt="notification-icon"><sup>8</sup></li>
+                                                <li><img src="images/person-icon.png" alt="notification-icon"></li>
+                                                <li><img src="images/swim-icon.png" alt="notification-icon"></li>
+                                            </ul>
+                                        </div>
+                                        <!--from-price-->
+                                        <div class="from-price">
+                                            <h2><span><sup>FROM $</sup>1,274</span></h2>
+                                        </div>
+                                    </div>
+                                    <!--close footer-price-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--close properties-card-->
+                    </div>
+
+                    <div class="item">
+                        <!--properties-card-->
+                        <div class="col-xs-12">
+                            <div class="properties-card">
+                                <img src="images/property-2.png" alt="properties-img" class="full-img">
+                                <!--properties-detail-->
+                                <div class="properties-detail">
+                                    <h2>Casa del Sol Redondo Beach</h2>
+                                    <div class="rate-our-deal">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <h4>(1)</h4>
+                                    </div>
+                                    <p>Duis ultricies ipsum nec libero tempus portm nec libero tempu
+                                        hasellu ro tempus portm nec libero tem</p>
+                                    <!--footer-price-->
+                                    <div class="footer-price">
+                                        <!--notification-->
+                                        <div class="notification">
+                                            <ul>
+                                                <li><img src="images/bed-icon.png" alt="notification-icon"><sup>4</sup>
+                                                </li>
+                                                <li><img src="images/people-icon.png"
+                                                         alt="notification-icon"><sup>8</sup></li>
+                                                <li><img src="images/person-icon.png" alt="notification-icon"></li>
+                                                <li><img src="images/swim-icon.png" alt="notification-icon"></li>
+                                            </ul>
+                                        </div>
+                                        <!--from-price-->
+                                        <div class="from-price">
+                                            <h2><span><sup>FROM $</sup>978</span></h2>
+                                        </div>
+                                    </div>
+                                    <!--close footer-price-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--close properties-card-->
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <!--close top-skew-content-->
+
+    <!--top-skew-->
+    <div class="top-skew"></div>
+
+</div>
+<!--======= close featured properties =======-->
+
+<!--========== book-with-confidence ==========-->
+<div class="book-with-confidence">
+    <!--top-skew-->
+    <div class="top-skew confidence"></div>
+    <!--confidence title-->
+    <div class="container top-skew-content">
+        <h2>BOOK WITH CONFIDENCE</h2>
+    </div>
+
+    <!--confidence-image-->
+    <div class="confidence-image wow rollIn" data-wow-delay="200ms">
+        <img src="images/confiedence-thumb.png" alt="no-image" class="thumb-like">
+    </div>
+    <!--confidence-content-->
+    <div class="confidence-content">
+        <!--connect-steps-->
+        <div class="connect-steps">
+            <!--top-skew-->
+            <div class="top-skew"></div>
+            <!--top-skew-content-->
+            <div class="top-skew-content">
+                <!--tabbing-button-->
+                <div class="tabbing-button">
+                    <ul>
+                        <li class="active wow fadeInRight" data-wow-delay="600ms">
+                            <button class="btn" data-toggle="tab" data-target="#howtobook">HOW TO BOOK
+                                <i class="material-icons dp48 add">add</i>
+                                <i class="material-icons dp48 remove">remove</i>
+                            </button>
+                        </li>
+                        <li class="wow fadeInRight" data-wow-delay="700ms">
+                            <button class="btn" data-toggle="tab" data-target="#paymentdeposit">
+                                PAYMENT AND DEPOSIT
+                                <i class="material-icons dp48 add">add</i>
+                                <i class="material-icons dp48 remove">remove</i>
+                            </button>
+                        </li>
+                        <li class="wow fadeInRight" data-wow-delay="800ms">
+                            <button class="btn" data-toggle="tab" data-target="#ourassistantce">
+                                OUR ASSISTANCE
+                                <i class="material-icons dp48 add">add</i>
+                                <i class="material-icons dp48 remove">remove</i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <!--tab-content-->
+                <div class="how-to-content">
+                    <div class="tab-content wow bounceInUp" data-wow-delay="1100ms">
+                        <!--tab-pane-->
+                        <div class="tab-pane fade active in" id="howtobook">
+                            <p>HOW TO BOOK ? ...Once you find a villa you are interested in through our advanced search
+                                tool,
+                                click the ‘Check Availability’ button to make an enquiry. You will receive a
+                                confirmation
+                                email
+                                once your enquiry is registered and a member of our team will deal with your request
+                                promptly.
+                            </p>
+                            <p>
+                                Duis ultricies ipsum nec libero tempus porta. Phasellus justo quam, hendrerit vitae
+                                gravida
+                                vel,
+                                malesuada nec tortor. Curabitur nec tincidunt velit. Aliquam sed ultrices lectus. Aenean
+                                ut
+                                sem
+                                quis nunc ultricies faucibus. Nullam ac metus ut dui lacinia varius eu non lacus. Ut
+                                interdum
+                                nisi erat, et vehicula metus dapibus eu. Donec vel justo eget dui porta finibus eu et
+                                ex.
+                            </p>
+                        </div>
+
+                        <!--tab-pane-->
+                        <div class="tab-pane fade" id="paymentdeposit">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            </p>
+                            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto
+                                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                                aspernatur
+                                aut
+                                odit aut fugit</p>
+                        </div>
+
+                        <!--tab-pane-->
+                        <div class="tab-pane fade" id="ourassistantce">
+                            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum
+                                deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                                cupiditate
+                                non
+                                provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum
+                                et
+                                dolorum fuga.
+                            </p>
+                            <p>"On the other hand, we denounce with righteous indignation and dislike men who are so
+                                beguiled
+                                and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
+                                cannot
+                                foresee the pain and trouble that are bound to ensue; and equal blame belongs to those
+                                who
+                                fail
+                                in their duty through weakness of will, which is the same as saying through shrinking
+                                from
+                                toil
+                                and pain. These cases are perfectly simple and easy to distinguish.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--close tab-content-->
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--======= close book-with-confidence =======-->
+
+<!--============= special-request =============-->
+<div class="special-request">
+    <div class="request-form clearfix wow bounceInUp" data-wow-delay="400ms">
+        <div class="mandatory">* mandatory</div>
+        <h2>YOU HAVE A SPECIAL REQUEST ?</h2>
+        <h3>Fill the form below or call us at <a href="tel:+18187068745">+1 818 706 8745</a></h3>
+        <p>We can help mia dolor sit amet, consectetur adipiscing elit. Cras viverra nibh non lorem congue.</p>
+        <form action="#" name="request">
+            <div class="row">
+                <!--==== form-group ====-->
+                <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="firstname" autocomplete="off">
+                        <label for="firstname">First Name *</label>
+                    </div>
+                </div>
+                <!--==== form-group ====-->
+                <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="lastname" autocomplete="off">
+                        <label for="lastname">Last Name *</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--==== form-group ====-->
+                <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="requestemail" autocomplete="off">
+                        <label for="requestemail">Email *</label>
+                    </div>
+                </div>
+                <!--==== form-group ====-->
+                <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <input type="number" id="phonenumber" class="form-control" autocomplete="off">
+                        <label for="phonenumber">Phone number *</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--==== form-group ====-->
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <textarea class="form-control" id="writecomment" autocomplete="off"></textarea>
+                        <label for="writecomment">Write your comment</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--==== form-group ====-->
+                <div class="col-xs-12 text-center">
+                    <button type="submit" class="btn submit wow flipInX" data-wow-delay="1200ms"><span>SUBMIT</span>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+<!--========== close special-request ==========-->
+
+
+<!--============= subscribe-email =============-->
+<div class="subscribe-email">
+    <!--top-skew-->
+    <div class="top-skew"></div>
+    <!--top-skew-content-->
+    <div class="top-skew-content">
+        <!--subscribe-image-->
+        <div class="subscribe-image wow bounceInLeft" data-wow-duration="1200ms" data-wow-delay="200ms">
+            <img src="images/letter-box.png" alt="letter-box">
+        </div>
+        <!--subscribe-input-->
+        <div class="subscribe-input wow fadeInRight" data-wow-delay="400ms">
+            <p> Be the <strong>first to hear</strong> about new villas and get exclusive discounts delivered to your
+                inbox.</p>
+            <form action="#" name="subscribe-email">
+                <div class="input-group">
+                    <input type="email" placeholder="Your email" autocomplete="off" class="form-control">
+                    <div class="input-group-btn">
+                        <button class="btn" type="submit"><span>SUBSCRIBE</span></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--========== close subscribe-email ==========-->
+
+
+<!--============= footer-area =============-->
+<div class="footer-area">
+    <!--footer-texture-->
+    <div class="footer-texture"></div>
+    <!--container-->
+    <div class="container">
+        <!--footer-middle-->
+        <div class="footer-middle">
+            <!--link-->
+            <ul class="link">
+                <li><a href="#">FAVORITES</a></li>
+                <li><a href="#">OUR SELECTION</a></li>
+                <li><a href="#">MAGAZINE</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">SUBMIT YOUR PROPERTY</a></li>
+            </ul>
+            <!--social-connect-->
+            <ul class="social-connect">
+                <!--== facebook ==-->
+                <li class="wow bounceIn" data-wow-delay="400ms">
+                    <a href="#" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+
+                 <!--== twitter ==-->
+                <li class="wow bounceIn" data-wow-delay="600ms">
+                    <a href="#" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+
+                 <!--== pinterest ==-->
+                <li class="wow bounceIn" data-wow-delay="700ms">
+                    <a href="#" target="_blank">
+                        <i class="fa fa-pinterest-p"></i>
+                    </a>
+                </li>
+
+                 <!--== linkedin ==-->
+                <li class="wow bounceIn" data-wow-delay="800ms">
+                    <a href="#" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+
+                 <!--== instagram ==-->
+                <li class="wow bounceIn" data-wow-delay="900ms">
+                    <a href="#" target="_blank">
+                        <i class="ti-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <!--footer-logo-->
+            <div class="footer-logo">
+                <a href="index.html"><img src="images/footer-logo.png" alt="footer-logo"></a>
+            </div>
+        </div>
+
+        <div class="copy-right">
+            Copyright © 2018 Living The Dream. All rights reserved I Read our
+            <a href="#" class="terms">Terms and conditions</a> for answers to booking and checkin <a href="#">FAQs.</a>
+        </div>
+
+    </div>
+</div>
+<!--========== close footer-area ==========-->
+
+<!--========== Javascript attachment files ==========-->
+<!--  bootstrap script -->
+<script src="vendor/javascripts/bootstrap.min.js"></script>
+<!-- jquery library -->
+<script src="vendor/javascripts/smoothscroll.js"></script>
+<!-- owl-carousel js -->
+<script src="vendor/js/owl.carousel.js"></script>
+<!-- owl-carousel js -->
+<script src="vendor/js/wow.min.js"></script>
+<!-- custom javascript -->
+<script src="vendor/js/custom.js"></script>
+<!--======= Close Javascript attachment files =======-->
+
+</body>
+</html>

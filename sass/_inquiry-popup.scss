@@ -1,0 +1,227 @@
+.inquiry-popup {
+  @include full-width;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100000;
+  top: 0;
+  text-align: center;
+  .vac {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .popup-main {
+    .contents {
+      width: 1016px;
+      text-align: left;
+      display: inline-block;
+      background: $white;
+      padding-bottom: 38px;
+      max-width: 100%;
+      @include tablet {
+        width: 900px;
+      }
+      @include i-pad {
+        width: 700px;
+      }
+      @include mobile-lg {
+        width: 400px;
+      }
+      @include mobile-sm {
+        width: 300px;
+      }
+    }
+  }
+  .header-popup {
+    @include full-width;
+    height: 158px;
+    overflow: hidden;
+    @include mobile-lg {
+      height: 100px;
+    }
+    .bottom-skew {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #432906;
+      transform: skewy(-4.8deg);
+      -webkit-transform: skewy(-4.8deg);
+      -ms-transform: skewy(-4.8deg);
+      -moz-transform: skewy(-4.8deg);
+      -o-transform: skewy(-4.8deg);
+      transform-origin: left;
+      -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+      -moz-transform-origin: left;
+      -o-transform-origin: left;
+      overflow: hidden;
+      .hdn-contant {
+        @include full-width;
+        height: 100%;
+        background-image: url(../images/popup-thum.png);
+        background-position: left 35px top 21px;
+        background-repeat: no-repeat;
+        transform: skewy(0.2deg);
+        -webkit-transform: skewy(4.8deg);
+        -ms-transform: skewy(4.8deg);
+        -moz-transform: skewy(4.8deg);
+        -o-transform: skewy(4.8deg);
+        margin-top: 43px;
+        text-align: center;
+        padding-top: 16px;
+        @include i-pad {
+          background-position: left 35px top 6px;
+          padding-top: 10px;
+        }
+        @include mobile-lg {
+          background-position: left 17px top 16px;
+          background-size: 63px;
+          margin-top: 17px;
+        }
+        @include mobile-sm {
+          background-size: 53px;
+        }
+        h1 {
+          color: #fff;
+          @include mobile-lg {
+            margin-top: 17px;
+            font-size: 26px;
+          }
+          @include mobile-sm {
+            font-size: 20px;
+          }
+        }
+        //  close button
+        .close1 {
+          position: absolute;
+          right: 25px;
+          top: 15px;
+        }
+      }
+    }
+  }
+  // main content popup
+  .content-popup {
+    &.special-request {
+      padding: 0 147px;
+      margin: 0;
+      background: none;
+      @include i-pad {
+        padding: 0 60px;
+      }
+      @include mobile-lg {
+        padding-top: 10px;
+      }
+      @include mobile-sm {
+        padding: 10px 15px 0 15px;
+      }
+      form {
+        margin-top: 10px;
+        label {
+          color: #999;
+        }
+        .bb0 {
+          margin-bottom: 0;
+        }
+        span.skewx-reverse {
+          i {
+            font-style: normal;
+            color: #999;
+            position: absolute;
+            top: 13px;
+            left: 18px;
+          }
+          input {
+            font-size: 20px;
+            font-style: italic;
+            opacity: 0.8;
+            color: #000;
+            font-weight: lighter;
+            text-align: center;
+            @include mobile-lg {
+              text-align: right;
+              font-size: 16px;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.checkbox {
+  label {
+    font-size: 13px;
+    font-family: Arial;
+    color: #999;
+    font-weight: normal;
+    padding-left: 30px;
+    input {
+      appearance: checkbox;
+      -moz-appearance: checkbox;
+      -webkit-appearance: checkbox;
+      -ms-appearance: checkbox;
+    }
+  }
+
+  /* Hide the browser's default checkbox */
+  .checkbox1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .checkbox1:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .checkbox1 input:checked ~ .checkmark {
+    background-color: #fff;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .checkbox1 input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .checkbox1 .checkmark:after {
+    left: 5px;
+    top: 0px;
+    width: 5px;
+    height: 11px;
+    border: solid #6a6a6a;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+.daterangepicker.ltr {
+  z-index: 100000;
+}

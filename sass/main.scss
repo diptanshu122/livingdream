@@ -1,0 +1,178 @@
+// bootstrap
+@import "../vendor/stylesheets/bootstrap";
+// variable
+@import "variable";
+
+// font-family > @import
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('#{$siteFont}/RobotoCondensed-Light.woff2') format("woff2"),
+  url('#{$siteFont}/RobotoCondensed-Light.woff') format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('#{$siteFont}/RobotoCondensed-Regular.woff2') format("woff2"),
+  url('#{$siteFont}/RobotoCondensed-Regular.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('#{$siteFont}/SourceSansPro-ExtraLight.woff2') format('woff2'),
+  url('#{$siteFont}/SourceSansPro-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('#{$siteFont}/SourceSansPro-Regular.woff2') format('woff2'),
+  url('#{$siteFont}/SourceSansPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('#{$siteFont}/DancingScript-Regular.woff2') format('woff2'),
+  url('#{$siteFont}/DancingScript-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// font awesome
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css";
+// Material Icons
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+// Mixins
+@import "mixins";
+
+/*img*/
+img {
+  max-width: 100%;
+  height: auto;
+  &.full-img{
+    width: 100%;
+    float: left;
+  }
+}
+
+/*appearance none*/
+input, textarea, button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  border: none;
+}
+
+// default
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*a link*/
+a {
+  @include transition(all 0.4s ease);
+  &, &:focus, &:hover {
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+}
+
+/*select*/
+select::-ms-expand {
+  display: none;
+}
+
+/*container*/
+.container {
+  @include lg-desktopmin-1400 {
+    width: 1340px;
+  }
+}
+
+// p
+p{
+  color: rgba(0, 0, 0, 0.7);
+}
+
+// verticle-block
+.verticle-block {
+  display: table;
+  height: 100%;
+  width: 100%;
+  float: left;
+  .cell {
+    vertical-align: middle;
+    display: table-cell;
+  }
+}
+
+// form-control,btn & focus
+.form-control {
+  border: none;
+  &:focus{
+    @include box-shadow(none);
+  }
+}
+.form-control:focus, .btn:focus, .btn.focus, .btn:active:focus,
+.btn:active.focus, .btn.active:focus, .btn.active.focus {
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+
+// owl-carousel,input-group,container-fluid
+.owl-carousel,.input-group,
+.container-fluid{
+  width: 100%;
+  float: left;
+}
+
+/*body*/
+body {
+  background-color: $white;
+  color: #000;
+  font-size: 17.01px;
+  @include sansRegular-pro;
+  font-kerning: none;
+  word-break: break-word;
+  overflow-x: hidden;
+}
+
+/*body, html*/
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+// import scss files
+//Scrollbar
+@import "scrollbar";
+// header
+@import "header";
+// home
+@import "home";
+// animate
+@import "animate";
+// search-result
+@import "search-result";
+// booking
+@import "booking";
+//inquiry popup
+@import "inquiry-popup";
+// property-detail
+@import "property-detail";
+// footer
+@import "footer";

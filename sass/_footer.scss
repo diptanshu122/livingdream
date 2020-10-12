@@ -1,0 +1,107 @@
+// footer
+.footer-area {
+  @include full-width;
+  background: $black;
+  padding-bottom: 9px;
+  min-height: 180px;
+  z-index: 10;
+  text-align: center;
+  color: #8e8e8e;
+  // footer-texture
+  .footer-texture {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    height: 19px;
+    width: 100%;
+    background-image: url('#{$imageUrl}/footer-zigtexture.png');
+    background-repeat: repeat;
+    background-position: bottom center;
+    background-color: rgba(0, 0, 0, 0.26);
+  }
+  // ul
+  ul {
+    font-size: 0;
+    width: 100%;
+    float: left;
+    // ul.link
+    &.link {
+      margin-bottom: 18px;
+      li {
+        margin: 0 12.7px;
+        @include i-pad{
+          margin-bottom: 12px;
+        }
+        a {
+          color: rgba(255, 255, 255, 0.52);
+          letter-spacing: 0.4px;
+        }
+      }
+    }
+    // ul.social-connect
+    &.social-connect {
+      margin-bottom: 22px;
+      li {
+        margin: 0 5px;
+        &:hover {
+          i {
+            background: #656565;
+          }
+        }
+        // i
+        i {
+          width: 27px;
+          height: 27px;
+          line-height: 29px;
+          font-size: 14px;
+          text-align: center;
+          display: block;
+          background: #454545;
+          @include border-radius(50px);
+          @include transition(0.3s);
+        }
+      }
+    }
+    // li
+    li {
+      display: inline-block;
+      a {
+        text-transform: uppercase;
+        color: $white;
+        font-size: 11.6px;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+  // footer-middle
+  .footer-middle {
+    width: 100%;
+    float: left;
+    padding: 31px 0;
+  }
+  // footer-logo
+  .footer-logo {
+    width: 100%;
+    float: left;
+  }
+  // copy-right
+  .copy-right {
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.95px;
+    a {
+      color: $white;
+      &.terms {
+        text-decoration: underline;
+      }
+      // hover
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

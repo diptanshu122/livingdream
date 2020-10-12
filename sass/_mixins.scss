@@ -1,0 +1,411 @@
+// responsive variables
+$lgdesktop-min-1449: 1449px;
+$lgdesktop-min-1400: 1400px;
+$lgdesktop-max-1450: 1450px;
+$lg-desktopmax-1540: 1540px;
+$tabletlg1400-width: 1400px;
+$lgdesktop-min-1300: 1300px;
+$lgdesktop-min-1250: 1250px;
+$lgdesktop-min-1200: 1200px;
+$lgdesktop-min-1090: 1090px;
+$lgdesktop-min-1025: 1025px;
+$lgdesktop-min-992: 992px;
+$tabletlg-width: 1300px;
+$tablet-width: 1199px;
+$tablet-1024: 1024px;
+$lg-desktopmax-1089: 1089px;
+$i-pad-width: 991px;
+$mobile-lg: 767px;
+$mobile-md: 639px;
+$mobile-md-500: 500px;
+$mobile-sm: 479px;
+$mobile-sm-359: 359px;
+$mobile-sm-349: 349px;
+$mobile-xs: 319px;
+
+// responsive mixins
+/*---- lg-desktopmin-1449 ----*/
+@mixin lg-desktopmin-1449 {
+  @media (min-width: #{$lgdesktop-min-1449}) {
+    @content;
+  }
+}
+
+/*---- lg-desktopmin-1400 ----*/
+@mixin lg-desktopmin-1400 {
+  @media (min-width: #{$lgdesktop-min-1400}) {
+    @content;
+  }
+}
+
+/*---- lg-desktopmin-1090 ----*/
+@mixin lg-desktopmin-1090 {
+  @media (min-width: #{$lgdesktop-min-1090}) {
+    @content;
+  }
+}
+
+/*---- desktop-min-1025 ----*/
+@mixin desktop-min-1025 {
+  @media (min-width: #{$lgdesktop-min-1025}) {
+    @content;
+  }
+}
+
+/*---- min-max-1024 ----*/
+@mixin minmax-1024 {
+  @media (max-width: 1024px) and (min-width: 992px) {
+    @content;
+  }
+}
+
+/*---- lgdesktop-min-992 ----*/
+@mixin lgdesktop-min-992 {
+  @media (min-width: #{$lgdesktop-min-992}) {
+    @content;
+  }
+}
+
+/*---- lg-desktopmin-1300 ----*/
+@mixin lg-desktopmin-1300 {
+  @media (min-width: #{$lgdesktop-min-1300}) {
+    @content;
+  }
+}
+
+/*---- lg-desktopmin-1250 ----*/
+@mixin lg-desktopmin-1250 {
+  @media (min-width: #{$lgdesktop-min-1250}) {
+    @content;
+  }
+}
+
+/*---- lg-desktopmin-1200 ----*/
+@mixin lg-desktopmin-1200 {
+  @media (min-width: #{$lgdesktop-min-1200}) {
+    @content;
+  }
+}
+
+/*---- lg-desktopmax-1450----*/
+@mixin desktopmax-1640 {
+  @media (max-width: 1640px) {
+    @content;
+  }
+}
+
+/*---- lg-desktopmax-1540----*/
+@mixin lg-desktopmax-1540 {
+  @media (max-width: #{$lg-desktopmax-1540}) {
+    @content;
+  }
+}
+
+/*---- lg-desktopmax-1450----*/
+@mixin lg-desktopmax-1450 {
+  @media (max-width: #{$lgdesktop-max-1450}) {
+    @content;
+  }
+}
+
+/*---- tabletlg1400 ----*/
+@mixin tabletlg1400 {
+  @media (max-width: #{$tabletlg1400-width}) {
+    @content;
+  }
+}
+
+/*---- tabletlg ----*/
+@mixin tabletlg {
+  @media (max-width: #{$tabletlg-width}) {
+    @content;
+  }
+}
+
+/*---- tablet ----*/
+@mixin tablet {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+/*---- tablet-1024 ----*/
+@mixin tablet-1024 {
+  @media (max-width: #{$tablet-1024}) {
+    @content;
+  }
+}
+
+/*---- lg-desktopmax-1089----*/
+@mixin lg-desktopmax-1089 {
+  @media (max-width: #{$lg-desktopmax-1089}) {
+    @content;
+  }
+}
+
+/*---- minmax-480 ----*/
+@mixin minmax-767 {
+  @media (max-width: 991px) and (min-width: 767px) {
+    @content;
+  }
+}
+
+/*---- i-pad ----*/
+@mixin i-pad {
+  @media (max-width: #{$i-pad-width}) {
+    @content;
+  }
+}
+
+/*---- minmax-480 ----*/
+@mixin minmax-480 {
+  @media (max-width: 767px) and (min-width: 480px) {
+    @content;
+  }
+}
+
+/*---- mobile-lg ----*/
+@mixin mobile-lg {
+  @media (max-width: #{$mobile-lg}) {
+    @content;
+  }
+}
+
+/*---- mobile-md ----*/
+@mixin mobile-md {
+  @media (max-width: #{$mobile-md}) {
+    @content;
+  }
+}
+
+/*---- mobile-500 ----*/
+@mixin mobile-500 {
+  @media (max-width: #{$mobile-md-500}) {
+    @content;
+  }
+}
+
+/*---- mobile-sm ----*/
+@mixin mobile-sm {
+  @media (max-width: #{$mobile-sm}) {
+    @content;
+  }
+}
+
+/*---- mobile-xs-349 ----*/
+@mixin mobile-xs-349 {
+  @media (max-width: #{$mobile-sm-349}) {
+    @content;
+  }
+}
+
+/*---- mobile-xs-349 ----*/
+@mixin mobile-xs-359 {
+  @media (max-width: #{$mobile-sm-359}) {
+    @content;
+  }
+}
+
+/*---- mobile-xs ----*/
+@mixin mobile-xs {
+  @media (max-width: #{$mobile-xs}) {
+    @content;
+  }
+}
+
+// box-shadow
+@mixin box-shadow($shadowval) {
+  box-shadow: $shadowval;
+  -webkit-box-shadow: $shadowval;
+  -ms-box-shadow: $shadowval;
+  -moz-box-shadow: $shadowval;
+  -o-box-shadow: $shadowval;
+}
+
+// box-shadow
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+
+// gradient-linear
+@mixin gradient-linear($clr, $nxtclr) {
+  background: $clr; /* Old browsers */
+  background: -moz-linear-gradient(top, #{$clr} 0%, #{$nxtclr} 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #{$clr} 0%, #{$nxtclr} 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #{$clr} 0%, #{$nxtclr} 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$clr}', endColorstr='#{$nxtclr}', GradientType=0); /* IE6-9 */
+}
+
+// text-shadow
+@mixin text-shadow($txtshadow) {
+  text-shadow: $txtshadow;
+  -webkit-text-shadow: $txtshadow;
+  -ms-text-shadow: $txtshadow;
+  -moz-text-shadow: $txtshadow;
+  -o-text-shadow: $txtshadow;
+}
+
+// background size
+@mixin bg-cover($cover) {
+  -moz-background-size: $cover;
+  -o-background-size: $cover;
+  -ms-background-size: $cover;
+  -webkit-background-size: $cover;
+  background-size: $cover;
+}
+
+// transition
+@mixin transition($transition) {
+  transition: $transition;
+  -webkit-transition: $transition;
+  -ms-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+}
+
+// @include transition(all 1s); <- how to use this mixin
+
+// generic transform property
+// transform-origin
+@mixin transform-origin($origin) {
+  transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  -moz-transform-origin: $origin;
+  -o-transform-origin: $origin;
+}
+
+// transform
+@mixin transform($transforms) {
+  transform: $transforms;
+  -webkit-transform: $transforms;
+  -ms-transform: $transforms;
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+}
+
+// rotate
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+// @include rotate(45); <- how to use this mixin
+
+// skew y
+@mixin skewy($degval) {
+  @include transform(skewy(#{$degval}deg));
+}
+
+// skew x
+@mixin skewx($degvalx) {
+  @include transform(skewx(#{$degvalx}deg));
+}
+
+// @include skewy(5); <- how to use this mixin
+
+// scale
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+
+// @include scale(2); <- how to use this mixin
+
+// translate
+@mixin translate($x, $y) {
+  @include transform(translate($x, $y));
+}
+
+// @include translate(50px,0px); <- how to use this mixin
+
+// full-width
+@mixin full-width {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+// opacity-hidden
+@mixin opacity-hidden {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+  filter: alpha(opacity=00);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+// roboto-condence
+@mixin roboto-condence {
+  font-family: 'Roboto Condensed';
+  font-weight: normal;
+  font-style: normal;
+}
+
+// roboto-light
+@mixin roboto-light {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: normal;
+}
+
+// sanslight-pro
+@mixin sanslight-pro {
+  font-family: 'Source Sans Pro';
+  font-weight: 200;
+  font-style: normal;
+}
+
+// sansRegular-pro
+@mixin sansRegular-pro {
+  font-family: 'Source Sans Pro';
+  font-weight: normal;
+  font-style: normal;
+}
+
+// dancing-font
+@mixin dancing-font {
+  font-family: 'Dancing Script';
+  font-weight: normal;
+  font-style: normal;
+}
+
+// vertically center modal
+.modal {
+  text-align: center;
+  padding: 0 !important;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+  /*------ modal-dialog ------*/
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    margin: 30px auto;
+    width: 70%;
+    @include tabletlg {
+      width: 873px;
+    }
+    @include tablet {
+      width: 70%;
+    }
+    @include mobile-lg {
+      width: 80%;
+    }
+    @include mobile-sm {
+      width: 100%;
+      padding: 0px 15px;
+    }
+  }
+}
+
+// ----- close modal -----//
